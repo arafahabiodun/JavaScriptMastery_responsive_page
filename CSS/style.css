@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #8a79f0;
+    --primary-color-dark: #2e2a40;
+    --text-dark: #221e36;
+    --text-light: #767268;
+    --extra-light: #f1f2ff;
+    --white: #fff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    overflow-x: hidden;
+}
+
+.deals {
+    background-color: var(--extra-light);
+    display: grid;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+    padding: 5rem 0;
+    margin: 25px 0;
+}
+
+.deals-section {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 0 25rem;
+}
+
+.section-title {
+    color: var(--text-dark);
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    color: var(--text-light);
+    font-size: 15px;
+
+}
+
+.container-deals-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25rem;
+}
+
+.deals-btn {
+    border-radius: 7px;
+    width: 100px;
+    height: 43px;
+    border: none;
+    background-color: var(--white);
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container-deals-btn .active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.models-container {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.model {
+    background-color: var(--white);
+    box-shadow: 0px 0px 20px #e3e2e6;
+    width: 22rem;
+    border-radius: 20px;
+    display: grid;
+    padding: 20px;
+}
+
+.model img {
+    width: 300px;
+    margin: 20px 0;
+
+}
+
+.model-about {
+    display: grid;
+    text-align: start;
+    gap: 12px;
+}
+
+.model-ratings {
+    color: goldenrod;
+}
+
+.model-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    font-size: 16px;
+}
+
+.model-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.model-price {
+    display: flex;
+    align-items: center;
+    bottom: 0px;
+}
+
+.model-price>h3 {
+    font-size: 30px;
+
+}
+
+.model-price>span {
+    font-size: 14px;
+
+}
+
+.model-link,
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.model-link,
+a:hover {
+    color: var(--text-dark);
+}
+
+@media(max-width:1500px) {
+
+
+    .deals-section {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        padding: 0 28rem;
+    }
+
+    .container-deals-btn {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 25rem;
+    }
+
+    .models-container {
+        margin: 40px 0px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media(max-width:1400px){
+
+      .deals-section {
+        padding: 0 28rem;
+    }
+
+    .container-deals-btn {
+        gap: 1.3rem;
+    }
+
+    .models-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        padding: 0 22rem;
+        margin-bottom: -18px;
+    }
+
+}
+
+@media(max-width: 1238px) {
+
+    .deals {
+        padding: 0 20px;
+        padding-bottom: 50px;
+    }
+
+    .deals-section {
+        padding: 0 28rem;
+    }
+
+
+    .section-title {
+        margin: 20px 0;
+    }
+
+    .container-deals-btn {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0 19rem;
+    }
+
+    .deals-btn {
+        width: 6rem;
+        font-size: 15px;
+    }
+
+    .models-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: -20px;
+    }
+}
+
+@media(max-width: 680px) {
+
+
+    .deals-section {
+        padding: 0 19rem;
+    }
+
+    .container-deals-btn {
+        gap: 1.3rem;
+        padding: 0 18rem;
+    }
+
+    .deals-btn {
+        font-size: 14px;
+        font-weight: 1000;
+        width: 5rem;
+    }
+
+    .models-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: -20px;
+    }
+}
+
+
+
+.Copyright{
+    margin: 4rem 0 -3rem 0;
+    color: var(--text-light);
+}
