@@ -267,19 +267,21 @@ a:hover {
     .deals{
         overflow-x:hidden;
     }
+    body{
+        overflow-x:hidden;
 
     .deals-section {
         padding: 0 22rem;
     }
 
     .container-deals-btn {
-        gap: 1.3rem;
+        gap: 1.2rem;
         padding: 0 21rem;
     }
 
     .deals-btn {
         font-size: 12px;
-        font-weight: 1000;
+        font-weight: 700;
         width: 5rem;
     }
 
