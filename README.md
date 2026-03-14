@@ -11,6 +11,7 @@
 ![CSS3](https://img.shields.io)
 ![JavaScript](https://img.shields.io)
 
+
 A fully responsive, dynamic landing page built to showcase luxury vehicle deals. This project focuses on high-quality UI/UX and mobile-first responsiveness.
 
 ## ✨ Features
